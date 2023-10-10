@@ -23,7 +23,7 @@ export default function Home() {
         }}
         uploadPreset="b26n2zkp"
       />
-
+      {/* to view image */}
       <CldImage
         width="960"
         height="600"

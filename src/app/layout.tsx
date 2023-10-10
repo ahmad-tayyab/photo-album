@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -15,18 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="white">
+    <html lang="en" className="dark">
       <body className={inter.className}>
-        <div className="border-b">
-          <div className="flex h-16 items-center px-4">
-            {/* <TeamSwitcher /> */}
-            {/* <MainNav className="mx-6" /> */}
-            <div className="ml-auto flex items-center space-x-4">
-              {/* <Search /> */}
-              {/* <UserNav /> */}
-            </div>
-          </div>
-        </div>
+        <Navbar />
         {children}
       </body>
     </html>
